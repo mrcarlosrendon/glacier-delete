@@ -8,7 +8,7 @@ See Glacier's docs: [Deleting an archive using the CLI](https://docs.aws.amazon.
 `pip3 install -r requirements.txt`
 
 ### How to run
-`python delete_archives.py [backup] [accountid] [archivejson]`
+`python delete_archives.py [backup] [archivejson]`
 
 ### How to get help
 `python delete_archives.py -h`
