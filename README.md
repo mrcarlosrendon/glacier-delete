@@ -1,5 +1,5 @@
 # glacier-delete
-Given a JSON inventory of a glacier vault, this will delete all archives. Uses `boto3` and `joblib` libraries for speed.
+Given a JSON inventory of an Amazon Glacier vault, this will delete all archives. Uses `boto3` and `joblib` libraries for speed.
 
 ### How do I create the archive JSON file? 
 See Glacier's docs: [Deleting an archive using the CLI](https://docs.aws.amazon.com/amazonglacier/latest/dev/deleting-an-archive-using-cli.html)
