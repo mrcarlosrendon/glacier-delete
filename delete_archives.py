@@ -17,8 +17,6 @@ argparser.add_argument("vault", help="Vault Name")
 argparser.add_argument("archive_json_file", help="JSON of Archive Inventory. See step 4 https://docs.aws.amazon.com/amazonglacier/latest/dev/deleting-an-archive-using-cli.html")
 args = argparser.parse_args()
 
-VAULT_NAME = args.vault
-
 with open(args.archive_json_file) as f:
     j = json.load(f)
 
