@@ -17,7 +17,11 @@ See Glacier's docs: [Deleting an archive using the CLI](https://docs.aws.amazon.
 On my 16 CPU machine a vault of ~135,000 archives took ~30 minutes to delete.
 
 ### Why can't I delete the vault afterwards?
-After deleting all of the archives, you need to recompute the inventory again :(
+After deleting all of the archives, you need to wait for Glacier to recompute the inventory again :(
+
+> S3 Glacier prepares an inventory for each vault periodically, every 24 hours. If there have been no archive additions or deletions to the vault since the last inventory, the inventory date is not updated
+
+https://docs.aws.amazon.com/amazonglacier/latest/dev/working-with-vaults.html
 
 After that you should have an empty inventory and should be able to delete the vault.
 
